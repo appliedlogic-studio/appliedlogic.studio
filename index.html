@@ -12,26 +12,31 @@
       <!-- text -->
       <div class="text">
         <span>Applied Logic</span>
-        <span id="info">
-          is a design-collective consisting of five designers who utilise
-          technology to create visual systems, develop interactions and
-          investigate potential futures.</span
+        <span class="hidden" id="info">
+          experiments with design and technology to create visual systems,
+          develop interactions, and investigate potential futures.</span
         >
-        <br />
-        <br />
-        <span>info@appliedlogic.com</span>
+        <span class="hidden"
+          ><a href="mailto:info@appliedlogic.studio" target="_blank"
+            >info@appliedlogic.studio</a
+          ></span
+        >
+        <span class="hidden" id="info">Full website coming soon.</span>
       </div>
       <!-- carousel -->
       <div class="carousel">
         <video
+          class="hidden"
           id="carousel"
-          src="assets/mp4/bloom.mp4"
+          src="assets/mp4/reel.mp4"
+          playsinline
           autoplay
           muted
           loop
         ></video>
       </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>

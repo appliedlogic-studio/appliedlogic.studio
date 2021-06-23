@@ -1,13 +1,15 @@
-const video = document.getElementById("carousel");
-const sources = ["bloom", "bbc"];
-let index = 0;
+let elems = $("main").find(".hidden");
 
-window.addEventListener("load", () => {
-  setInterval(loop, 5000);
+$("document").ready(() => {
+  animate();
 });
 
-function loop() {
-  index < sources.length - 1 ? index++ : (index = 0);
-  let temp = "assets/mp4/" + sources[index] + ".mp4";
-  video.src = temp;
+function animate() {
+  let timer = 100;
+  $.each(elems, (i, item) => {
+    setTimeout(() => {
+      $(item).removeClass("hidden");
+    }, timer);
+    timer += 100;
+  });
 }
